@@ -1,0 +1,8 @@
+services:
+  chef:
+    build: .
+    volumes:
+      - ./Recetas:/recipes
+    command: chef serve --host
+    ports:
+      - "8080:8080"
